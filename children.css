@@ -15,7 +15,7 @@ body {
 .glass-container {
     display: block;
     max-width: 72vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 30px;
     background: rgba(0, 0, 0, 0.279);
     padding: 50px;
@@ -36,7 +36,8 @@ body {
 }
 img{
     margin-top: 5vh;
-    max-width: 550px;
+    max-width: 350px;
+    left: 15;
 }
 
 .back-button:hover {
@@ -53,6 +54,9 @@ img{
     .button-container {
         margin-top: 20px;
     }
+    img {
+        max-width: 250px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -63,5 +67,9 @@ img{
 
     .button-container {
         margin-top: 15px;
+    }
+    img {
+        max-width: 200px;
+        margin-top: 3vh;
     }
 }
