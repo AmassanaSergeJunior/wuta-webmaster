@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-self;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    color: #fff;
+
+    background: linear-gradient(rgba(210, 217, 20, 0.518), rgba(97, 220, 35, 0.518)) ;
+    min-height: 100vh;
+}
+.container{
+    display: flex; 
+    justify-content: center;
+}
+.glass-container{
+   display: block;
+   max-width: 72vw;
+   margin-top: 10vh;
+   margin-bottom: 30px; 
+   background: rgba(0, 0, 0, 0.256);
+   padding: 50px;
+   border-radius: 16px;
+   background: rgba(0, 0, 0, 0.279);
+   backdrop-filter: blur(11.6px);
+   -webkit-backdrop-filter: blur(11.6px);
+}
+
+.logo{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+.logo img{
+    width: 100px; /* Assurez-vous que la largeur et la hauteur sont égales */
+    height: 100px;
+    border-radius: 50%; /* Rend l'image circulaire */
+    object-fit: cover; /* Assure que l'image est bien contenue dans le cercle sans distorsion */
+    border: 2px solid #fff; 
+    
+}
+ul.nav-links{
+    float: right;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+   
+}
+li.nav-link{
+    gap: 10px;
+    font-size: 30px;
+    font-weight: 70;
+    margin-top: 30px;
+
+}
+li.nav-link a{
+    padding: 2px;
+    height: 5vh;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+li.nav-link a:hover{
+    padding: 10px;
+    height: 5vh;
+    color: #e7fc28;
+    background-color: rgb(20, 18, 18);
+}
+/* Style par défaut pour les liens de navigation */
+ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+li.nav-link {
+    position: relative; /* Nécessaire pour positionner la liste déroulante */
+}
+
+/* Style de la liste déroulante */
+ul.dropdown {
+    display: none; /* Caché par défaut */
+    position: absolute;
+    top: 100%; /* Place la liste sous l'élément parent */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    padding: 5px 0;
+    border-radius: 8px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+ul.dropdown li {
+    padding: 10px 20px;
+}
+
+ul.dropdown li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+ul.dropdown li a:hover {
+    background-color: #e7fc28;
+    color: #000;
+}
+
+/* Affichage de la liste déroulante lors du survol */
+li.nav-link:hover ul.dropdown {
+    display: block;
+}
+
+.start{
+    color: #e7fc28;
+}
+.content{
+    display: flex;
+    width:100% ;
+}
+.main{
+    margin-top: 10vh;
+    display: inline-block;
+    padding: 20px;
+}
+.main h2{
+    font-size: 35px;
+}
+.main p{
+    font-size: 20px;
+    font-weight: 40px;
+    line-height: 23px;
+}
+button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    color: #e7fc28;
+    background-color: rgb(20, 18, 18);
+}
+.image-trap img{
+    margin-top: 5vh;
+    margin-left: 0px;
+    max-width: 550px;
+
+}
+.image-wrapper{
+    margin-top: 5vh;
+    position: relative;
+}
+.image-wrapper img{
+    margin-left: 100px;
+    max-width: 400px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column-reverse; /* Reverses the order of the elements */
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-wrapper {
+        margin-top: 5vh;
+    }
+
+    .main {
+        margin-top: 5vh;
+        padding: 15px;
+    }
+
+    .main h2 {
+        font-size: 28px;
+    }
+
+    .main p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    button {
+        margin-top: 20px;
+        width: 100%;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .image-trap img {
+        max-width: 100%;
+        margin-top: 5vh;
+    }
+
+    .image-wrapper img {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .glass-container {
+        max-width: 95vw;
+        padding: 20px;
+    }
+
+    .logo img {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    li.nav-link {
+        font-size: 20px;
+    }
+
+    .main h2 {
+        font-size: 24px;
+    }
+
+    .main p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    button {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .image-trap img, .image-wrapper img {
+        max-width: 100%;
+    }
+}
