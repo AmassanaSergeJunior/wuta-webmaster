@@ -29,7 +29,11 @@ body {
     backdrop-filter: blur(11.6px);
     -webkit-backdrop-filter: blur(11.6px);
 }
-
+.tet{
+    justify-content: center;
+    text-align: center;
+    color: #e7fc28;
+}
 .logo img {
     width: 100px;
     height: 100px;
@@ -157,7 +161,11 @@ button:hover {
         max-width: 90vw;
         padding: 30px;
     }
-
+    .tet{
+        justify-content: center;
+        text-align: center;
+        color: #e7fc28;
+    }
     .logo img {
         width: 80px;
         height: 80px;
@@ -218,6 +226,11 @@ button:hover {
         height: 60px;
     }
 
+    .tet{
+        justify-content: center;
+        text-align: center;
+        color: #e7fc28;
+    }
     li.nav-link {
         font-size: 18px;
     }
